@@ -1,0 +1,435 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #FF9ACD;
+  font-family: 'Lato', Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+}
+
+h1 {
+  font-size: 3.0rem;
+  line-height: 3.6rem;
+  margin-bottom: 3rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+  line-height: 2.8rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 2.0rem;
+  line-height: 2.6rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+  color: #999;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+a {
+  color: mediumblue;
+}
+
+ul {
+  margin-bottom: 2rem;
+}
+
+ul li {
+  margin: 0 4rem;
+  list-style-type: disc;
+}
+
+ol li {
+  display: list-item;
+  list-style-type: decimal;
+}
+
+p {
+  font-size: 2.0rem;
+  line-height: 2.6rem;
+  margin-bottom: 2rem;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+hr {
+  margin: 4rem -2rem;
+  height: 0;
+  border: 0;
+  border-bottom: 1px solid black;
+}
+
+a.button {
+  background: mediumseagreen;
+  display: block;
+  padding: 2.0rem;
+  margin-top: 4rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.2rem;
+  color: white;
+  border-bottom: 5px solid darkgreen;
+  border-radius: 10px;
+}
+
+.circle {
+  display: table;
+  background: mediumseagreen;
+  width: 35px;
+  height: 35px;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+  border-radius: 40px;
+}
+
+.circle span {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.facebook {
+  display: inline-block;
+  background: white;
+  border-radius: 5px;
+}
+
+.facebook a {
+  display: block;
+  padding: 1rem 1rem 0.5rem;
+}
+
+/* global site styles */
+
+main > header {
+  background: #FF9ACD;
+  text-align: center;
+  padding: 3rem 0;
+}
+
+main > header h1 {
+  font-size: 3.6rem;
+  font-weight: 900;
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #333;
+}
+
+main > header h2 {
+  font-size: 2.6rem;
+  font-weight: 300;
+}
+
+main > header h1 span {
+  font-weight: normal;
+  font-weight: 300;
+}
+
+main > header .facebook {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+main > nav {
+  background: #111;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+main > nav ul {
+  margin-bottom: 0;
+}
+
+main > nav li {
+  display: inline-block;
+  margin: 0 auto;
+  position: relative;
+}
+
+main > nav li:hover {
+  background: #333;
+}
+
+main > nav li.active {
+  background: #333;
+}
+
+main > nav li a {
+  display: block;
+  padding: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+main > section {
+  background: white;
+  padding: 0 1rem 7rem;
+  margin: 0 auto;
+}
+
+main > section h1 {
+  padding-top: 4rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+main > section article {
+  max-width: 70rem;
+  margin: 0 auto;
+}
+
+main > footer {
+  background: #222;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+main > footer {
+  color: #999;
+}
+
+main > footer li {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0 1rem;
+}
+
+main > footer hr {
+  max-width: 80%;
+  margin: 2rem auto;
+  border-color: #666;
+}
+
+main > footer p {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+main > footer a {
+  color: white;
+  display: inline-block;
+  padding: 5px;
+}
+
+main > footer p a {
+  color: #999;
+}
+
+main > footer .facebook {
+  display: none;
+}
+
+/* HOME PAGE */
+
+.home > section figure {
+  display: block;
+  height: 200px;
+  background: url(../img/cats.jpg) repeat-x;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.volunteer article ul li {
+  margin: 0 5rem;
+  list-style-type: disc;
+}
+
+.volunteer article li p {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
+}
+
+.volunteer article h4 {
+  margin-bottom: 0;
+}
+
+.about article li {
+  margin: 1rem 0 1rem 4rem;
+}
+
+.donate {
+  text-align: center;
+}
+
+.donate article h2 {
+  font-size: 2.0rem;
+}
+
+.donate h2 + h4 {
+  margin-top: -1rem;
+}
+
+.donate .step {
+  margin-top: -1.5rem;
+  margin-bottom: 3rem;
+  padding: 3rem;
+  border: 3px solid mediumseagreen;
+  border-radius: 5px;
+}
+
+.adopt .pets {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.adopt .pets h2 {
+  margin: 4rem 0 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+.adopt .pets figure {
+  width: 250px;
+  min-height: 325px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  padding: 10px;
+  text-align: center;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.adopt .pets figure:hover {
+  box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+}
+
+.adopt .pets figure span {
+  display: block;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  text-align: center;
+  background: #000;
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.adopt .pets figure img {
+  position: absolute;
+  left: -100%;
+  right: -100%;
+  top: -100%;
+  bottom: -100%;
+  margin: auto;
+  width: 100%;
+}
+
+.adopt .pets figcaption {
+  font-weight: bold;
+  color: black;
+}
+
+.adopt .pets .location {
+  font-size: 1.3rem;
+  color: grey;
+}
+
+.adopt .pets_iframe {
+  display: none;
+  text-align: center;
+}
+
+.contact article > h2 {
+  text-align: center;
+  font-weight: normal;
+}
+
+.contact article li {
+  margin-bottom: 1.5rem;
+}
+
+.contact .hours {
+  font-size: 1.5rem;
+  line-height: 2.0rem;
+  color: #666;
+}
+
+@media screen and (max-width: 650px)  {
+  html {
+    font-size: 50%;
+  }
+
+  p {
+    line-height: 2.4rem;
+  }
+
+  main > header {
+    padding: 2rem 0;
+  }
+
+  main > header h1 {
+    font-size: 3.2rem;
+    padding: 0 10px 5px;
+    margin-bottom: 0;
+  }
+
+  main > header h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+
+  main > header .facebook {
+    display: none;
+  }
+
+  main > nav li a {
+    font-size: 1.5rem;
+    padding: 1rem 0.6rem;
+  }
+
+  main > nav .no_phone {
+    display: none;
+  }
+
+
+  main > section h1 {
+    font-size: 2.4rem;
+    line-height: 2.4rem;
+    padding-top: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  main > footer .facebook {
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+
+  .home > section figure {
+    height: 70px;
+    background-size: auto 70px;
+    margin-bottom: -1rem;
+  }
+
+  .adopt .pets {
+    width: auto;
+  }
+
+  .adopt .pets figure {
+    min-height: 0;
+  }
+
+  .volunteer article li p {
+    line-height: 2.0rem;
+  }
+}

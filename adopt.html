@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PURRS Naperville Animal Rescue</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0" />
+  <meta name="keywords" content="PURRS Naperville, PURRS, cat, Naperville, rescue, adopt, Illinois" />
+  <meta name="description" content="PURRS Naperville. All cat rescue serving the DuPage County Area. Your Cat Adoption, Rescue and Eduation Resource."/>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="js/underscore-min.js"></script>
+  <main class="adopt" role="main">
+    <header>
+      <h1>PURRS <span>Naperville</span></h1>
+      <h2>cat rescue and adoption</h2>
+      <figure class="facebook">
+        <a href="http://facebook.com/purrsnaperville">
+          <img src="img/facebook.png">
+        </a>
+      </figure>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="adopt.html">Adopt<span class="no_phone"> a cat</span></a></li>
+        <li><a href="volunteer.html">Volunteer</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="about.html"><span class="no_phone">Cat </span>Q&amp;A</a></li>
+        <li><a href="contact.html">Contact<span class="no_phone">  us</span></a></li>
+      </ul>
+    </nav>
+    <section>
+      <article>
+        <h1>Let&rsquo;s find your new pet!</h1>
+        <p>
+          Check out the photos below to see all of our currently available cats. You can <a href="contact.html">visit them</a> during regular store hours, or see them in action during our adoption hours on <strong>Saturdays and Sundays from 1-4pm</strong>.
+        </p>
+        <p>
+          Our adoption fees are: <strong>$110 </strong>for adult cats, <strong>$150</strong> for kittens, and <strong>$160</strong> for purebreds. You&rsquo;ll get a discount for adopting two (or more!) cats. All cats are spayed/neutered, current on all age-appropriate shots, and microchipped.
+        </p>
+
+        <p>
+          Looking for a specific type of cat that isn&rsquo;t listed? Just <a href="contact.html">let us know</a>, and we&rsquo;ll notify you as soon as we find a match.
+        </p>
+
+        <p>
+          Ready to move forward? <a href="about.html#adopt">Here&rsquo;s how our adoption process works.</a>
+        </p>
+
+        <script>
+          $(document).ready(function() {
+            $.getJSON('http://api.petfinder.com/shelter.getPets?format=json&key=2a6c7a7dd07abc0f204c7eef1b4d7f52&id=IL467&count=100&callback=?')
+              .done(function(petApiData) {
+                _.each(petApiData.petfinder.pets.pet, function(pet, index) {
+                  $(".pets").append('<a href="http://www.petfinder.com/petdetail/'+pet.id.$t+'"><figure><span><img src="'+pet.media.photos.photo[2].$t+'"/></span><figcaption>'+pet.name.$t+'</figcaption><div class="location">at '+pet.contact.address1.$t+'</div></figure></a>');
+                });
+              })
+              .error(function(err) {
+                $(".pets").hide();
+                $(".pets_iframe").show();
+              });
+            });
+        </script>
+      </article>
+      <div class="pets"></div>
+      <div class="pets_iframe">
+        <iframe id="iframe" style="width: 700px; height: 2800px; margin: 20px auto;" src="http://fpm.petfinder.com/petlist/petlist.cgi?shelter=IL467&status=A&age=&limit=75&offset=0&animal=Cat&title=&style=4&ref=2_uvXuQCV7v1XXG" width="500px" height="600px" hspace="0" vspace="0"  frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" bordercolor="#000000" scrolling="no"></iframe>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="adopt.html">Adopt a cat</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="about.html">Cat Q&amp;A</a></li>
+          <li><a href="contact.html">Contact us</a></li>
+        </ul>
+      </nav>
+      <figure class="facebook">
+        <a href="http://facebook.com/purrsnaperville">
+          <img src="img/facebook.png">
+        </a>
+      </figure>
+      <hr>
+      <p>
+        Thanks to our supporters!
+       <a href="http://petco.com">Petco</a> &bull; <a href="http://petsmart.com">PetSmart</a> &bull; <a href="http://brookvilleanimalhospitalonline.com/">Brookville Animal Hospital</a> &bull; <a href="http://www.napervilleanimalhospital.com/">Naperville Animal Hospital</a>
+      </p>
+      <hr>
+      <p>Copyright 2014, PURRS Naperville</p>
+    </footer>
+  </main>
+</body>
