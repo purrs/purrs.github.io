@@ -349,6 +349,19 @@ main > footer .facebook {
   color: black;
 }
 
+.adopt .hours {
+  margin-bottom: 2rem;
+}
+
+.adopt .hours td {
+  padding-right: 20px;
+}
+
+.adopt .hours th {
+  font-weight: bold;
+  text-align: left;
+}
+
 .adopt .pets .location {
   font-size: 1.3rem;
   color: grey;
