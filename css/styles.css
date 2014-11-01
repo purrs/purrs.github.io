@@ -117,11 +117,16 @@ a.button {
 }
 
 .promo-banner {
+  float: right;
+  width: 21rem;
+  border: 1px solid;
+  padding: 2rem;
+  margin-right: -25rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: darkorange;
+  color: white;
   text-align: center;
-  color: darkgreen;
-  border-top: 1px solid green;
-  border-bottom: 1px solid green;
-  padding: 1.5rem 0;
 }
 
 .promo-banner .headline {
@@ -135,6 +140,16 @@ a.button {
   line-height: 1.3;
   margin-bottom: 0;
 }
+
+.promo-banner a {
+  color: white;
+}
+
+.promo-banner a.action {
+  display: block;
+  margin-top: 1rem;
+}
+
 
 /* global site styles */
 
@@ -315,24 +330,6 @@ main > footer .facebook {
   border-radius: 5px;
 }
 
-.adopt .promo-banner {
-  float: right;
-  width: 21rem;
-  border: 1px solid;
-  padding: 2rem;
-  margin-right: -25rem;
-  border-radius: 8px;
-  box-sizing: border-box;
-  background: green;
-  color: white;
-}
-
-.adopt .promo-banner a {
-  color: white;
-  display: block;
-  margin-top: 1rem;
-}
-
 .adopt .pets {
   margin: 0 auto;
   text-align: center;
@@ -428,7 +425,7 @@ main > footer .facebook {
 }
 
 @media screen and (max-width: 1200px)  {
-  .adopt .promo-banner {
+  .promo-banner {
     float: none;
     width: 100%;
     border-radius: 0;
@@ -439,11 +436,16 @@ main > footer .facebook {
     color: darkgreen;
   }
 
-  .adopt .promo-banner .headline {
+  .promo-banner .headline {
     margin-bottom: 0.5rem;
   }
 
-  .adopt .promo-banner a {
+  .promo-banner a {
+    color: darkgreen;
+    text-decoration: none;
+  }
+
+  .promo-banner a.action {
     color: mediumblue;
     display: inline;
     margin: 0;
