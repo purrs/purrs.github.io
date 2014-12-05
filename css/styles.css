@@ -124,15 +124,22 @@ a.button {
   margin-right: -25rem;
   border-radius: 8px;
   box-sizing: border-box;
-  background: darkorange;
+  background: #444;
   color: white;
   text-align: center;
+}
+
+.promo-banner img {
+  border: 1px solid white;
+  display: block;
+  margin: 0 auto 1.5rem;
+  border-radius: 5px;
 }
 
 .promo-banner .headline {
   font-weight: bold;
   display: block;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .promo-banner .details {
@@ -141,13 +148,17 @@ a.button {
   margin-bottom: 0;
 }
 
-.promo-banner a {
-  color: white;
+.promo-banner .details span {
+  text-decoration: underline;
 }
 
-.promo-banner a.action {
+.promo-banner a {
+  color: white;
+  text-decoration: none;
+}
+
+a.action {
   display: block;
-  margin-top: 1rem;
 }
 
 
