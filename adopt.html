@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script src="js/underscore-min.js"></script>
   <main class="adopt" role="main">
     <header>
@@ -69,17 +69,10 @@
                   $(".pets").append('<a href="http://www.petfinder.com/petdetail/'+pet.id.$t+'"><figure><span><img src="'+pet.media.photos.photo[2].$t+'"/></span><figcaption>'+pet.name.$t+'</figcaption><div class="location">at '+pet.contact.address1.$t+'</div></figure></a>');
                 });
               })
-              .error(function(err) {
-                $(".pets").hide();
-                $(".pets_iframe").show();
-              });
             });
         </script>
       </article>
       <div class="pets"></div>
-      <div class="pets_iframe">
-        <iframe id="iframe" style="width: 700px; height: 2800px; margin: 20px auto;" src="http://fpm.petfinder.com/petlist/petlist.cgi?shelter=IL467&status=A&age=&limit=75&offset=0&animal=Cat&title=&style=4&ref=2_uvXuQCV7v1XXG" width="500px" height="600px" hspace="0" vspace="0"  frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" bordercolor="#000000" scrolling="no"></iframe>
-      </div>
     </section>
     <footer>
       <nav>
@@ -113,7 +106,6 @@
 
     ga('create', 'UA-51073867-1', 'purrsnaperville.org');
     ga('send', 'pageview');
-
   </script>
 </body>
 </html>
