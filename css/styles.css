@@ -116,6 +116,13 @@ a.button {
   padding: 1rem 1rem 0.5rem;
 }
 
+.notice {
+  background: #ffc;
+  padding: 2rem;
+  margin: 2rem -2rem;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
 .promo-banner {
   float: right;
   width: 21rem;
